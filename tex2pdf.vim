@@ -1,9 +1,9 @@
 " Add this to your ~/.vimrc
 
-" Comment this out if you don't want to auto run on save
+" Comment this out if you don't want to run automatically on save
 autocmd BufWritePost *.tex :Tex2pdf
 
-" Can run yourself with :Tex2pdf command
+" Use :Tex2pdf in command mode to run manually
 command! Tex2pdf call <SID>Tex2pdf()
 
 " Run tex2pdf on current .tex file
@@ -18,7 +18,7 @@ function! s:Tex2pdf()
   endif
   " Move to current directory
   execute("cd %:h")
-  " Run 'tex2pdf file' silently, errors caught by pdflatex
+  " Run 'tex2pdf.sh file' silently, errors are caught by pdflatex
   execute("silent !~/scripts/tex2pdf.sh " . l:fileName[0])
   " Refresh screen (in case blank from silent)
   execute("normal \<C-L>")

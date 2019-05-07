@@ -1,0 +1,5 @@
+ErrorDocument 401 default
+AuthName "You shall not pass!"
+AuthType Basic
+AuthUserFile /u8/[uwserid]/.htpasswd
+require valid-user

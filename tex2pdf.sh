@@ -2,8 +2,8 @@
 
 # Runs pdflatex on given LaTeX filename (without .tex)
 # Stores log files in ./extra/ folder
-# Copies resulting PDF to ~/public_html/, live at:
-# https://www.student.cs.uwaterloo.ca/~uwserid/file.pdf
+# Copies resulting PDF to ~/public_html/cs240, live at:
+# https://www.student.cs.uwaterloo.ca/~uwserid/cs240/file.pdf
 
 # Exit on error
 set -e
@@ -19,7 +19,7 @@ pdflatex ./../$1.tex
 mv $1.pdf ./..
 cd ..
 
-# Copy PDF to ~/public_html
+# Copy PDF to ~/public_html/cs240
 cp $1.pdf $HOME/public_html/cs240/$1.pdf
 
 echo -e "____________________________________________________________________\n"

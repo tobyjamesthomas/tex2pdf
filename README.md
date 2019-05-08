@@ -13,6 +13,8 @@ Useful if you want to write LaTeX in the student environment and not rely on thi
 2. Create a `~/scripts` folder in your home directory and copy [tex2pdf.sh](./tex2pdf.sh) into it: `mkdir -p ~/scripts && wget -O ~/scripts/tex2pdf.sh https://raw.githubusercontent.com/tobyjamesthomas/tex2pdf/master/tex2pdf.sh`
 3. Define an alias `tex2pdf`: `alias tex2pdf='~/scripts/tex2pdf.sh`
 4. Add the contents of [tex2pdf.vim](./tex2pdf.vim) to your `~/.vimrc`.
+5. Finally, create a `cs240/` folder in your `~/public_html/` and add an [.htaccess](./.htaccess) file in it to password protect your assignments. Change `[uwserid]` to your username.
+6. Generate a `.htpasswd` file using [http://www.htaccesstools.com/htpasswd-generator/](http://www.htaccesstools.com/htpasswd-generator/) and place it in your home directory. This will be your login username and password to view your cs240 folder online.
 
 ## Usage
 ### From command line

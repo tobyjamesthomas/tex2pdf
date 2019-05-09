@@ -6,7 +6,7 @@ https://www.student.cs.uwaterloo.ca/~[uwserid]/cs240/[file].pdf
 
 Add [tex2pdf.vim](./tex2pdf.vim) to your `~/.vimrc` and Vim will run this script automatically every time you save a .tex file.
 
-Useful if you want to write LaTeX in the student environment / terminal and not rely on third-party apps to preview them.
+Useful if you want to write LaTeX in the student environment and not rely on third-party apps to preview them.
 
 **Important:** Follow the steps below, specifically 5 and 6, to ensure that your files are password protected.
 

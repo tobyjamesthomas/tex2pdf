@@ -8,6 +8,8 @@ Add [tex2pdf.vim](./tex2pdf.vim) to your `~/.vimrc` and Vim will run this script
 
 Useful if you want to write LaTeX in the student environment and not rely on third-party apps to preview them.
 
+**Important:** Follow the steps below, specifically 5 and 6, to ensure that your files are password protected.
+
 ## Set up
 1. Login to the student environment: `ssh [uwserid]@linux.student.cs.uwaterloo.ca`
 2. Create a `~/scripts` folder in your home directory and copy [tex2pdf.sh](./tex2pdf.sh) into it.
@@ -37,5 +39,5 @@ https://www.student.cs.uwaterloo.ca/~[uwserid]/cs240/[file].pdf
 ```
 
 ## Notes:
-- Feel free to copy / customize / share this code
+- Feel free to copy / modify this code, however, use at your own risk
 - Let me know if you have any thoughts or questions :)
